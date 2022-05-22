@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+:root {
+  --Color-std: rgb(100,100,100);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+  padding: 10vmin;
+}
+
+#signup {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+#signup > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#success {
+  height: 100vh;
+  padding: 10vmin;
+}
+
+h1 {
+  margin: 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 15vmin;
+}
+
+h2 {
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20vmin;
+  font-weight: 200;
+  z-index: -1;
+  cursor: default;
+  letter-spacing: -2vmin;
+  padding: 0 1rem;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 200;
+  color: var(--Color-std);
+  line-height: 0.8;
+  overflow: hidden;
+}
+
+body .head {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  margin: 0;
+  line-height: 1.2;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+body input {
+  width: 100%;
+  border: 0;
+  background: #e3e3e3;
+  font-size: 4vmin;
+  font-weight: 200;
+  font-family: Montserrat;
+  position: relative;
+  left: 0px;
+}
+
+body input:focus {
+  outline: none;
+}
+
+.email {
+  background: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
+.email input {
+  text-align: right;
+}
+
+.pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-top: 1rem;
+}
+
+.pass div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body {
+  margin: 0;
+}
+
+.hid {
+  visibility: hidden;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--Color-std);
+}
+
+button i {
+  font-size: 75%;
+}
+
+button a {
+  color: var(--Color-std);
+  text-decoration: none;
+}
+
+@media (orientation: portrait) {
+  h1 {
+    overflow-wrap: break-word;
+    width: 65vw;
+  }
+}
+
+@media (min-width: 1080px) {
+  .email h3 {
+    padding: 0 1rem 0 10vw;
+  }
+  .pass h3 {
+    padding: 0 10vw 0 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

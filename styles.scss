@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+:root {
+    --Color-std: rgb(100,100,100);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+    padding: 10vmin;
+}
+
+#signup {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#signup > * {
+    flex-grow: 1;
+}
+
+#success {
+    height: 100vh;
+    padding: 10vmin;
+}
+
+h1 {
+    margin: 0;
+    width: min-content;
+    font-size: 15vmin;
+    //overflow-wrap: break-word;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+h3{
+    margin: 0;
+    font-size: 20vmin;
+    font-weight: 200;
+    z-index: -1;
+    cursor: default;
+    letter-spacing: -2vmin;
+    padding: 0 1rem;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 200;
+    color: var(--Color-std);
+    line-height: 0.8;
+    overflow: hidden;
+
+    .head {
+        position:absolute;
+        bottom: 1rem;
+        left: 2rem;
+        margin: 0;
+        line-height: 1.2;
+        width: min-content;
+    }
+    
+    input {
+        width: 100%;
+        border: 0;
+        background: rgb(227, 227, 227);
+        font-size: 4vmin;
+        font-weight: 200;
+        font-family: Montserrat;
+        position: relative;
+        left: 0px;
+        
+    }
+    input:focus {
+        outline: none;
+    }
+    
+}
+
+.email{
+    background: rgb(220, 220, 220);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    input {
+        text-align: right;
+    }
+}
+
+.pass{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    padding-top: 1rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+body{
+    margin: 0;
+}
+
+.hid {
+    visibility: hidden;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--Color-std);
+    
+    i {
+        font-size: 75%;
+    }
+
+    a {
+        color: var(--Color-std);
+        text-decoration: none;
+    }
+}
+
+@media (orientation: portrait) {
+    h1{
+        overflow-wrap: break-word;
+        width: 65vw;
+    }
+}
+
+@media (min-width:1080px) {
+    .email h3 {
+        padding: 0 1rem 0 10vw;
+    }
+    .pass h3 {
+        padding: 0 10vw 0 1rem;
+    }
+}
